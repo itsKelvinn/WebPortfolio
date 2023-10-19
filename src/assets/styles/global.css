@@ -1,0 +1,12 @@
+@import url('fonts.css');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    font-family: 'lato' , sans-serif;
+    color: white;
+    @apply bg-primary;
+}
+
