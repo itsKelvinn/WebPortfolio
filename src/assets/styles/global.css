@@ -10,3 +10,14 @@ body{
     @apply bg-primary;
 }
 
+#root{
+    @apply w-full bg-primary flex items-center flex-col;  
+}
+
+.content{
+    width: 1280px;
+}
+
+.pageHeight{
+    height: 701px;
+}
