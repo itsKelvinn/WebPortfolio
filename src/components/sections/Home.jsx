@@ -3,12 +3,13 @@ import { SecondaryButton } from '../common/Button'
 
 export default function Home() {
   return (
-    <div className='w-full pageHeight flex mt-16 content'>
-        <div className='h-full w-full flex flex-col justify-center items-center text-center'>
-            <h1 className='text-5xl font-bold mb-4'>Hello, I'm Kelvin Giovanno</h1>
-            <p className='text-lg'>I aspire to be a full-stack developer.</p>
-            <SecondaryButton text={"Check my portfolio"}/>
-        </div>
+    <div className='w-full flex justify-center apply-hero-image'>
+      <div className='px-10 pageHeight flex mt-16 content'>
+          <div className='width-hero w-1/2 flex flex-col justify-center items-start'>
+              <h1 className='text-2xl'>Hi there ,</h1>
+              <h1 className='text-5xl font-bold'>I’m <span className='text-blue-800'>Kelvin Giovanno</span> aspire to be a full-stack developer.</h1>
+          </div>
+      </div>
     </div>
   )
 }

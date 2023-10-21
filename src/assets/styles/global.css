@@ -11,7 +11,7 @@ body{
 }
 
 #root{
-    @apply w-full bg-primary flex items-center flex-col;  
+    @apply w-full bg-primary flex items-center flex-col overflow-hidden;  
 }
 
 .content{
@@ -20,4 +20,18 @@ body{
 
 .pageHeight{
     height: 701px;
+}   
+
+.width-hero{
+    width: 600px;
+}
+
+.width-about{
+    width: 750px;
+}
+
+.apply-hero-image {
+    background-image: url('/public/Hero-image.jpg');
+    background-size: cover;
+    background-position: center;
 }
