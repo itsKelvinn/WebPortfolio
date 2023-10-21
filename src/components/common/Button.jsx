@@ -14,4 +14,12 @@ const SecondaryButton = ({text}) => {
     )
 }
 
-export {PrimaryButton , SecondaryButton};
+const BlueButton = ({text}) => {
+    return(
+        <div className="cursor-pointer bg-blue-600 rounded-md px-3 py-2 font-bold">
+            {text}
+        </div>
+    )
+}
+
+export {PrimaryButton , SecondaryButton , BlueButton};
