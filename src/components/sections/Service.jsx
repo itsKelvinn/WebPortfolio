@@ -32,7 +32,7 @@ const Service = () => {
                 
                 <div className="service-item bg-secondary flex flex-col justify-end h-[520px] w-[400px] p-10 gap-4">
                     <div>
-                        <img src={imagepath + "UI_UX_icon.svg"} alt="uiux_icon" />
+                        <img src={"./WebPortfolio/icons/" + "UI_UX_icon.svg"} alt="uiux_icon" />
                         <h1 className="mt-4 text-4xl font-bold w-14">UI/UX Designer</h1>
                     </div>
                     <div>
@@ -44,7 +44,7 @@ const Service = () => {
 
                 <div className="service-item bg-secondary flex flex-col justify-end h-[520px] w-[400px] p-10 gap-4">
                     <div>
-                        <img src={imagepath + "Backend_icon.svg" } alt="backend_icon" />
+                        <img src={"./WebPortfolio/icons/" + "Backend_icon.svg" } alt="backend_icon" />
                         <h1 className="mt-4 text-4xl font-bold">Back End Developer</h1>
                     </div>
                     <div>
@@ -56,8 +56,8 @@ const Service = () => {
 
                 <div className="service-item bg-secondary flex flex-col justify-end h-[520px] w-[400px] p-10 gap-4">
                     <div>
-                        <img src={imagepath + "Frontend_icon.svg"} alt="frontend_icon" />
-                        <h1 className="mt-4 text-4xl font-bold">Back End Developer</h1>
+                        <img src={"./WebPortfolio/icons/" + "Frontend_icon.svg"} alt="frontend_icon" />
+                        <h1 className="mt-4 text-4xl font-bold text-red-500">Back End Developer</h1>
                     </div>
                     <div>
                         <p className="text-base">
