@@ -30,11 +30,6 @@ body{
     width: 750px;
 }
 
-.apply-hero-image {
-    background-image: url('/public/Hero-image.jpg');
-    background-size: cover;
-    background-position: center;
-}
 
 #tsparticles{
     @apply h-full w-full absolute top-0;

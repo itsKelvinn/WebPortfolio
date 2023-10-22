@@ -1,8 +1,6 @@
 import React, { useEffect } from 'react';
 import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
-import { BlueButton } from '../common/Button';
 
 const Aboutme = () => {
   useEffect(() => {
@@ -45,6 +43,16 @@ const Aboutme = () => {
     });
   }, []);
 
+  const handleDownload = () => {
+    // Replace 'your_cv.pdf' with the actual file name of your CV.
+    const link = document.createElement('a');
+    link.href = process.env.PUBLIC_URL + '/Portofolio_KelvinGiovanno.pdf';
+    link.download = 'CV_KelvinGiovanno.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   const imagePath = process.env.PUBLIC_URL + '/kelvingiovanno.png';
 
   return (
@@ -60,7 +68,9 @@ const Aboutme = () => {
             I'm Kelvin Giovanno, also known as Kelvin or Vin. I'm on a mission to become a full-stack developer driven by my passion for problem-solving and creating impactful solutions. I chose BINUS University for my Computer Science major to pursue this dream. I enjoy delving into front-end, back-end, and UI/UX design, constantly learning and growing in these dynamic fields.
           </p>
           <div className='flex mt-10'>
-            <BlueButton text="Download CV" />
+          <button onClick={handleDownload} className="cursor-pointer bg-blue-600 rounded-md px-3 py-2 font-bold text-white">
+            Donwload CV
+          </button>
           </div>
         </div>
 

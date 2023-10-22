@@ -18,7 +18,7 @@ export default function Footer() {
               </a>
             </div>
             <div className='w-[40px] h-[40px] border-[1px] border-[#333333] flex justify-center items-center rounded-md hover:bg-primary transition-all ease-in duration-200 cursor-pointer'>
-              <a href="">
+              <a href="https://twitter.com/Itskelvin2000">
                 <img src={process.env.PUBLIC_URL + '/logos/twitter_logo.svg'} alt="Twitter_logo" className='width-[20px] h-[20px]'/>
               </a>
             </div>

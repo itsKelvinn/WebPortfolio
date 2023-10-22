@@ -1,6 +1,5 @@
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { useEffect } from 'react';
 import './assets/styles/global.css';
 import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
@@ -10,7 +9,6 @@ import Banner from './components/sections/Banner';
 import Portfolio from './components/sections/Portfolio';
 import Service from './components/sections/Service';
 import Contact from './components/sections/Contact';
-import { useRef } from 'react';
 
 gsap.registerPlugin(ScrollTrigger);
 

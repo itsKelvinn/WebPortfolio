@@ -1,5 +1,4 @@
 import React from 'react';
-import { PrimaryButton } from '../common/Button';
 import { gsap } from 'gsap';
 import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
 

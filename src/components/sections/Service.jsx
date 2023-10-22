@@ -30,7 +30,7 @@ const Service = () => {
                 
                 <div className="service-item bg-secondary flex flex-col justify-end h-[520px] w-[400px] p-10 gap-4">
                     <div>
-                        <img src={`${process.env.PUBLIC_URL}/icons/UI_UX_icon.svg`} alt="uiux_icon" />
+                        <img src={process.env.PUBLIC_URL + "/icons/UI_UX_icon.svg"} alt="uiux_icon" />
                         <h1 className="mt-4 text-4xl font-bold w-14">UI/UX Designer</h1>
                     </div>
                     <div>
@@ -42,7 +42,7 @@ const Service = () => {
 
                 <div className="service-item bg-secondary flex flex-col justify-end h-[520px] w-[400px] p-10 gap-4">
                     <div>
-                        <img src={`${process.env.PUBLIC_URL}/icons/Backend_icon.svg`} alt="backend_icon" />
+                        <img src={process.env.PUBLIC_URL + "/icons/Backend_icon.svg" } alt="backend_icon" />
                         <h1 className="mt-4 text-4xl font-bold">Back End Developer</h1>
                     </div>
                     <div>
@@ -54,7 +54,7 @@ const Service = () => {
 
                 <div className="service-item bg-secondary flex flex-col justify-end h-[520px] w-[400px] p-10 gap-4">
                     <div>
-                        <img src={`${process.env.PUBLIC_URL}/icons/Frontend_icon.svg`} alt="frontend_icon" />
+                        <img src={process.env.PUBLIC_URL + "/icons/Frontend_icon.svg"} alt="frontend_icon" />
                         <h1 className="mt-4 text-4xl font-bold">Back End Developer</h1>
                     </div>
                     <div>
