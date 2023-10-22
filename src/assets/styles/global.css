@@ -35,3 +35,7 @@ body{
     background-size: cover;
     background-position: center;
 }
+
+#tsparticles{
+    @apply h-full w-full absolute top-0;
+}

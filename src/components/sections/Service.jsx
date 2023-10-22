@@ -1,13 +1,34 @@
+import { gsap } from 'gsap';
+import { useEffect } from 'react';
 
 const Service = () => {
+
+    useEffect(() => {
+        gsap.from('.service-item', {
+          y: 50,
+          opacity: 0,
+          stagger: 0.2, // Adjust the stagger value as needed
+          duration: 1, // Adjust the duration of the animation
+          delay: .1,
+          ease: 'power3.out', // Adjust the easing function as needed
+          scrollTrigger: {
+            trigger: '#services',
+            start: 'top 80%', // Adjust the starting point as needed
+            end: 'top 50%', // Adjust the end point as needed
+            toggleActions: 'play none none reverse' // Define the toggle actions
+          }
+        });
+    }, []);
+
+
     return (
-        <div className="w-full flex flex-col items-center py-20 gap-20 relative">
+        <div id="services" className="w-full flex flex-col items-center py-20 gap-20 relative">
             
             <h1 className="text-5xl font-bold">My Services</h1>
 
             <div className="w-[1280px] flex gap-10 z-10">
                 
-                <div className="bg-secondary flex flex-col justify-end h-[520px] w-[400px] p-10 gap-4">
+                <div className="service-item bg-secondary flex flex-col justify-end h-[520px] w-[400px] p-10 gap-4">
                     <div>
                         <img src={`${process.env.PUBLIC_URL}/icons/UI_UX_icon.svg`} alt="uiux_icon" />
                         <h1 className="mt-4 text-4xl font-bold w-14">UI/UX Designer</h1>
@@ -19,7 +40,7 @@ const Service = () => {
                     </div>
                 </div>
 
-                <div className="bg-secondary flex flex-col justify-end h-[520px] w-[400px] p-10 gap-4">
+                <div className="service-item bg-secondary flex flex-col justify-end h-[520px] w-[400px] p-10 gap-4">
                     <div>
                         <img src={`${process.env.PUBLIC_URL}/icons/Backend_icon.svg`} alt="backend_icon" />
                         <h1 className="mt-4 text-4xl font-bold">Back End Developer</h1>
@@ -31,7 +52,7 @@ const Service = () => {
                     </div>
                 </div>
 
-                <div className="bg-secondary flex flex-col justify-end h-[520px] w-[400px] p-10 gap-4">
+                <div className="service-item bg-secondary flex flex-col justify-end h-[520px] w-[400px] p-10 gap-4">
                     <div>
                         <img src={`${process.env.PUBLIC_URL}/icons/Frontend_icon.svg`} alt="frontend_icon" />
                         <h1 className="mt-4 text-4xl font-bold">Back End Developer</h1>

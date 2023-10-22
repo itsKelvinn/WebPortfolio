@@ -1,14 +1,46 @@
 import React from 'react'
+import ParticleBackground from '../particle/ParticleBackground'
+import { gsap } from 'gsap';
+import { useEffect } from 'react';
 
 export default function Home() {
+
+  useEffect(() => {
+    gsap.from('.text-2xl', {
+      x: -50,
+      opacity: 0,
+      scrollTrigger: {
+        trigger: '.text-2xl',
+        start: 'top 80%', // Adjust the starting point as needed
+        end: 'top 50%', // Adjust the end point as needed
+        toggleActions: 'play none none reverse' // Define the toggle actions
+      },
+      duration: 1 // Adjust the duration of the animation
+    });
+
+    gsap.from('.text-5xl', {
+      x: -50,
+      opacity: 0,
+      scrollTrigger: {
+        trigger: '.text-5xl',
+        start: 'top 80%', // Adjust the starting point as needed
+        end: 'top 50%', // Adjust the end point as needed
+        toggleActions: 'play none none reverse' // Define the toggle actions
+      },
+      duration: 1 // Adjust the duration of the animation
+    });
+  }, []);
+
+
   return (
-    <div className='w-full flex justify-center apply-hero-image'>
-      <div className='px-10 h-[860px] flex mt-16 content'>
-          <div className='width-hero w-1/2 flex flex-col justify-center items-start'>
+    <div id='home' className='w-full h-[930px] flex justify-center relative'>
+      <div className='px-10 h-full flex mt-16 w-[1280px] z-10'>
+          <div className='w-[700px] flex flex-col justify-center items-start'>
               <h1 className='text-2xl'>Hi there ,</h1>
-              <h1 className='text-5xl font-bold'>I’m <span className='text-blue-800'>Kelvin Giovanno</span> aspire to be a full-stack developer.</h1>
+              <h1 className='text-5xl font-bold'>I’m <span className='text-blue-800'>Kelvin Giovanno</span>, aspiring to be a full-stack developer</h1>
           </div>
       </div>
+      <ParticleBackground />
     </div>
   )
 }
