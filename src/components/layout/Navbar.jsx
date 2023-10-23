@@ -38,15 +38,15 @@ export default function Navbar() {
           </button>
           <button
             className='font-normal text-base hover:text-blue-700 transition-all ease-in duration-200 cursor-pointer'
-            onClick={() => handleScroll('portfolio')}
-          >
-            Portfolio
-          </button>
-          <button
-            className='font-normal text-base hover:text-blue-700 transition-all ease-in duration-200 cursor-pointer'
             onClick={() => handleScroll('services')}
           >
             Services
+          </button>
+          <button
+            className='font-normal text-base hover:text-blue-700 transition-all ease-in duration-200 cursor-pointer'
+            onClick={() => handleScroll('portfolio')}
+          >
+            Portfolio
           </button>
           <button
             className='font-normal text-base hover:text-blue-700 transition-all ease-in duration-200 cursor-pointer'

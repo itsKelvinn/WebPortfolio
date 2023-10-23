@@ -40,7 +40,7 @@ const Contact = () => {
   }, []);
 
   return (
-    <div className="flex p-10 relative overflow-hidden">
+    <div className="flex py-40 relative overflow-hidden">
       <div className="bg-secondary flex px-10 py-20 items-center contact-section">
         <div className="flex flex-col w-[500px] gap-5">
           <h1 className="text-5xl font-bold">Let's work Together on your next project</h1>
