@@ -23,7 +23,7 @@ const Service = () => {
     return (
         <div id="services" className="w-full flex flex-col items-center py-20 gap-20 relative">
 
-            <h1 className="text-5xl font-bold">My Services</h1>
+            <h1 className="title1 text-5xl font-bold">My Services</h1>
 
             <div className="w-[1280px] flex gap-10 z-10">
 

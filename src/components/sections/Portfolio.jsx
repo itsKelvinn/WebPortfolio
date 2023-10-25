@@ -73,11 +73,12 @@ const Portfolio = () => {
           });
       }, []);
 
+
     return (
         <div id="portfolio" className="flex flex-col items-center w-[1280px] gap-10 pt-14 relative">
             
             <div className="mb-10">
-                <h1 className="text-5xl font-bold">Portfolio</h1>
+                <h1 className="title2 text-5xl font-bold">Portfolio</h1>
             </div>
             
             <div className="flex items-center gap-12 fromLeft1">
@@ -189,7 +190,6 @@ const Portfolio = () => {
                     </div>
                 </div>
             </div>
-        
         </div>
     );
 }
